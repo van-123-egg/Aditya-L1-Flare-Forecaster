@@ -1,0 +1,699 @@
+Optimizing Urban Heat Mitigation and cooling strategies via Artificial Intelligence and Machine Learning (AIML)
+Description
+Develop a geospatial AI/ML-based system, backed with physics informed decision making to identify urban heat stress hotspots, quantify key drivers of urban heating, and generate optimized, scenario-based cooling interventions for mitigating urban heat impacts.
+Objective
+Participants are expected to develop a framework to:
+Identify Urban Heat Hotspots
+Generate heat stress maps using satellite and meteorological data
+Analyze Drivers of Urban Heating
+Quantify the influence of factors such as land use/land cover, urban morphology, vegetation, and atmospheric conditions
+Model Heat Dynamics using AIML
+Establish relationships between land surface temperature (LST) and contributing factors using physics-informed ML approaches
+Generate and Optimize Cooling Scenarios
+Simulate interventions (e.g., urban greening, cool roofs, albedo changes, water bodies) and evaluate their effectiveness in reducing heat stress
+Input Datasets
+Participants may use the following datasets:
+Remote Sensing Data:
+Land Surface Temperature derived from Landsat 8
+Land Surface Temperature from ECOSTRESS
+Land Use/Land Cover from Sentinel-2 / Landsat
+Meteorological Data:
+Atmospheric variables (air temperature, humidity, wind speed) from ERA5 & Central Pollution Control Board
+Urban Form & Infrastructure:
+Urban morphology from: OpenStreetMap, Global Human Settlement Layer & UT-GLOBUS (if available)
+Optional Modeling Tools:
+SOLWEIG & InVEST
+Outcomes
+Heat Stress Maps identifying urban hotspots
+Quantitative assessment of key drivers contributing to urban heat
+Validated AIML model capturing urban heat dynamics
+Scenario-based evaluation of cooling interventions
+Optimal intervention strategy, including: Type of intervention (e.g., green roofs, tree cover), Spatial placement and Estimated temperature reduction (°C)
+Generative AI-Based Cloud Removal and Reconstruction for LISS-IV Satellite Imagery
+Description
+Persistent cloud cover is a major challenge in optical remote sensing, particularly over tropical and mountainous regions such as the North Eastern Region (NER) of India. Clouds and cloud shadows significantly reduce the usability of optical satellite imagery for applications such as land use–land cover mapping, disaster monitoring, environmental assessment, and infrastructure analysis. LISS-IV imagery provides high spatial resolution data that is valuable for detailed geospatial analysis. However, frequent cloud contamination limits the temporal availability of usable observations. Traditional cloud masking techniques often lead to loss of information and incomplete scene interpretation.
+This problem statement focuses on developing a Generative AI-based framework for automated cloud removal and surface reconstruction in LISS-IV imagery. The framework should leverage spatial, spectral, and temporal information to generate cloud-free imagery while preserving fine-scale spatial details and spectral consistency. The proposed solution may explore advanced deep learning approaches such as diffusion models, GANs, transformer-based architectures, or multi-modal fusion techniques using auxiliary data sources such as Sentinel-1 SAR imagery, Sentinel-2 optical imagery, or temporal reference observations.
+Objective
+Develop a Generative AI-based framework for automated cloud removal in LISS-IV imagery.
+Reconstruct cloud-covered regions while preserving spatial structures and spectral characteristics.
+Generate visually consistent and analysis-ready cloud-free imagery.
+Evaluate the reconstructed outputs using quantitative and qualitative assessment methods.
+Develop a scalable workflow for operational cloud removal applications.
+Expected Outcomes
+Automated cloud-free reconstruction of LISS-IV imagery.
+Improved usability of optical satellite data under persistent cloud-cover conditions.
+Enhanced spatial and spectral consistency in reconstructed outputs.
+Generation of analysis-ready satellite products for downstream geospatial applications.
+Development of a prototype framework for operational deployment.
+Comparative assessment of different Generative AI architectures for cloud reconstruction.
+Dataset Required
+Primary Dataset
+LISS-IV satellite imagery (cloudy and cloud-free scenes) (Bhoonidhi)
+Auxiliary Datasets (Optional publicly available data)
+Sentinel-1 SAR imagery
+Sentinel-2 optical imagery
+Temporal reference imagery
+DEM data
+Any other datasets
+Suggested Tools/Technologies
+Programming Frameworks
+Python
+PyTorch / TensorFlow
+Geospatial Tools
+GDAL
+Rasterio
+QGIS
+Google Earth Engine (optional)
+Supporting Libraries
+OpenCV
+NumPy
+Scikit-image
+Albumentations
+Expected Solution / Steps to be Followed to Achieve the Objectives
+Collection and preprocessing of cloudy and cloud-free LISS-IV imagery.
+Preparation of cloud masks and co-registration of auxiliary datasets (optional).
+Identification and reuse of suitable pre-trained deep learning or Generative AI models for transfer learning (optional).
+Fine-tuning of pre-trained models on LISS-IV imagery for cloud reconstruction tasks (optional).
+Integration of temporal and/or multi-sensor information for improved reconstruction quality (optional).
+Training, optimization, and validation of the developed deep learning model.
+Generation of analysis-ready and cloud-free products.
+Documentation and deployment of the developed workflow.
+3 .Development of Surface AQI & Identification of HCHO Hotspots over India using Satellite Data
+Overview
+Air pollution is a major health hazard that's liable for many annual excess deaths worldwide. The concept of air quality index (AQI) that transforms weighted values of individual air pollution related parameters into a single number or set of numbers is widely used for air quality communication and decision making in many countries. Hence the AQI is a rating scale for reporting the Ambient air pollution (CO, NO2, O3, SO2, and PM2.5 etc) recorded at monitoring sites on a particular time scale (e.g., daily). The two main objectives of AQI are (a) to inform and caution the public about the risk of exposure to daily pollution levels and (b) to enforce required regulatory measures by competent authority for immediate local impact. The higher the AQI value, the greater the level of air pollution and health risk. Most of the global population lives further than 100 km from air quality monitors and devoid of air quality information in that area. Hence it is important to develop a surface AQI derived from satellite data to know its spatial distribution on daily basis.
+VOC's can be monitored from Global Ozone Monitoring Experiment (GOME), the Scanning Imaging Absorption Spectrometer for Atmospheric Cartography (SCIAMACHY), the Ozone Monitoring Instrument (OMI), and the TROPOspheric Monitoring Instrument (TROPOMI), play pivotal roles in retrieving HCHO columns. Formaldehyde (HCHO) is a key indicator of volatile organic compound (VOC) emissions and plays an important role in ozone formation and atmospheric chemistry. During biomass burning events (such as agricultural residue burning and forest fires), large amounts of VOCs are released, leading to enhanced HCHO concentrations. This problem aims to identify and analyze spatio-temporal hotspots of HCHO over India using satellite observations, with a focus on biomass burning periods.
+The National Clean Air Programme (NCAP) is India's long-term, time-bound strategy to reduce air pollution by 20–40% in non-attainment cities. INSAT 3D satellite provides Aerosol Optical Depth data product, from which surface PM2.5 need to be deduced to assess the pollution exposure to the people. The Sustainable Development Goal (SDG) target (11.6) calls for reducing adverse environmental effects in cities. Chintan Shivir 2.0 targets include urban climate, air quality, mitigation, sustainable development. Hence, the problem statement is relevant to ISRO and National priorities.
+Objectives
+Development of surface Air quality index (AQI) using satellite data — Spatial maps of air quality index over India
+High-resolution maps of HCHO hotspots during biomass burning seasons
+Identification of major source regions (e.g., Indo-Gangetic Plain, forest fire zones)
+Expected Outcomes
+Spatial maps of surface AQI over India
+Spatial maps of HCHO concentrations and hotspots over India
+Identification of major source regions
+Analysis on influence of fire activity on HCHO levels through transport
+Dataset Required
+AOD data from INSAT 3D satellite (https://www.mosdac.gov.in/insat-3d-data-products)
+Sentinel-5P (TROPOMI NO2, SO2, CO, O3 & HCHO data) (https://developers.google.com/earth-engine/datasets/catalog/sentinel-5p/ https://download.geoservice.dlr.de/S5P_TROPOMI/files/L3/)
+Ground based air quality data from CPCB (https://airquality.cpcb.gov.in/ccr/#/caaqm-dashboard-all/caaqm-landing/caaqm-data-repository)
+MODIS / VIIRS fire count data (https://firms.modaps.eosdis.nasa.gov/active_fire/)
+Reanalysis meteorological data (ERA5/IMDAA/MERRA-2) https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download https://nwp.ncmrwf.gov.in/reanalysis https://disc.gsfc.nasa.gov/datasets?project=MERRA-2
+Suggested Tools/Technologies
+Python
+Google Earth Engine
+Python tools for data base creation and use of deep learning models such as CNN, LSTM or hybrid deep learning models such as CNN-LSTM
+Expected Solution / Steps to be followed to achieve the objectives
+Objective-1
+Generate data base of columnar multi pollutant concentrations from satellite data sets
+Generate data base of surface measured multi pollutant concentrations (from CPCB) along with meteorological parameters (from IMDAA/ERA-5/MERRA-2)
+Develop algorithm using deep learning models to predict ground based multi pollutant concentrations
+Validate the predicted concentrations with ground-based data and prepare spatial maps of AQI
+Objective-2
+Acquire and pre-process satellite HCHO column data
+Extract biomass burning periods using fire count datasets
+Map spatio-temporal distribution of HCHO concentrations
+Identify hotspots using statistical thresholds or clustering methods
+Analyse correlation between fire activity and HCHO levels
+Assess transport influence using wind/reanalysis data
+Evaluation Parameters
+Objective-1
+Statistical parameters such as RMSE, R, MAE etc. will be used to arrive at the accuracy of predicted parameters
+Objective-2
+Accuracy and clarity of hotspot detection
+Integration of multi-source datasets
+Scientific interpretation of results
+Visualization quality (Spatial maps over Indian region, time series)
+Innovation in methodology
+Image representing problem statement
+Objective-1
+Flow diagram showing columnar satellite data, CPCB surface data, and meteorological data fed into a CNN-LSTM deep learning model to produce spatial maps of surface AQI
+Objective-2
+Flow diagram showing remote sensing data, fire data, and reanalysis meteorological data processed to produce high-resolution HCHO hotspot maps, source region identification, temporal evolution, and fire-HCHO correlation over India
+4 . Route Resilience: Occlusion-Robust Road Extraction & Graph-Theoretic Criticality Analysis for Urban Mobility
+Overview
+Modern urban centres, particularly rapidly expanding Indian metropolises (e.g., Bengaluru), face a dual challenge in spatial modelling: fragmentation and stagnation. This challenge sits squarely within the mandate of ISRO's National Natural Resources Management System (NNRMS), which seeks to maximise the downstream utility of indigenous remote sensing EO satellites such as Cartosat and Resourcesat LISS-4.
+Standard satellite-based road extraction often fails due to "spectral blindness" caused by tree canopies, building shadows, and cloud cover. These "broken" masks are useless for real-world applications like disaster response or traffic simulation because they lack topological connectivity. The need for robust, automated road asset mapping has been specifically highlighted in recent National Meets - by the Ministry of Electronics and Information Technology (MeitY) for GIS-based urban planning and e-governance decision support, and by the Ministry of Consumer Affairs, Food and Public Distribution for infrastructure mapping, facility layout, and route verification.
+This solution bridges that gap with an end-to-end pipeline: first, using context-aware Deep Learning to "see through" occlusions, and second, transforming those masks into a mathematically continuous, weighted graph to identify systemic bottlenecks and simulate urban collapse scenarios. By transitioning from legacy analytical methods to modern Deep Learning and graph-theoretic modelling, the framework provides automated, occlusion-robust road asset mapping for urban planning, while its predictive "what-if" simulations offer actionable decision support for disaster response, structural resilience, and facility distribution across dynamic Indian metropolises.
+The proposed problem statement is well-suited for a 30-hour hackathon through a parallel team workflow: while one sub-team builds and trains the context-aware segmentation model, the other can simultaneously develop the topological healing and network ablation scripts using mock or open-source vector baselines. By eliminating complex manual preprocessing bottlenecks, the team can focus entirely on Deep Learning optimisation, graph healing, and the UI dashboard.
+Objective
+Occlusion-Aware Extraction
+Develop a Transformer-based deep learning architecture to infer road continuity under heavy tree cover, vehicles, shadows, and urban clutter, across varying illumination and seasonal conditions.
+Topological Reconstruction
+Convert fragmented pixel masks into a unified, routable weighted vector graph using graph-theoretic "healing" (MST, Disjoint Sets).
+Structural Intelligence
+Quantify urban vulnerability by identifying "Gatekeeper Nodes"/bottlenecks through centrality metrics.
+Simulated Stress Testing
+Build a framework to predict the systemic impact of localised infrastructure failure (e.g., flooding or accidents).
+Expected Outcomes
+High-Fidelity Routable Topology
+A mathematically closed, connected vector network derived from high-resolution imagery, far surpassing standard pixel-based segmentation, a robust, generalizable model that suits different terrains (urban, rural, forested).
+Quantitative Criticality Map (Bottleneck Identification)
+A spatial heatmap identifying high-betweenness intersections that act as single points of failure, identifying "Gatekeeper Nodes".
+Predictive Impact Assessment for Disaster Scenarios
+A simulation framework that quantifies the systemic "cost" of losing specific network nodes. By systematically disabling high-centrality nodes (e.g., simulating floods, accidents, or construction), the project will produce a Resilience Index - a tool for planners to disable nodes and instantly see rerouting effects and travel time increases.
+Dataset Required
+Primary
+Source Resolution / Notes
+Sentinel-2 10 m spatial resolution - openly available
+Resourcesat LISS-IV 5.8 m spatial resolution - openly available
+Cartosat-3 High resolution - provided to participants during the 30-hour hackathon for challenge-specific experimentation and evaluation
+Ground Truth & Open Datasets
+Data readiness is fully secured through a zero-manual-effort automation pipeline that pairs open-source ground truth with multi-resolution satellite feeds. Participants may utilise:
+SpaceNet Roads Dataset - for model development and pre-training
+DeepGlobe Road Extraction Dataset - for model development and pre-training
+OpenSatMap - for model development and pre-training
+OpenStreetMap (OSM) road vector layers - ground-truth road masks generated automatically and used as reference annotations for training, validation, and performance assessment
+Commended Stack
+Source Commended Stack
+Libraries Albumentations (data augmentation), Rasterio, GDAL (geospatial processing), OpenCV, NumPy
+Segmentation Model U-Net with ResNet Backbone, UNet++, DeepLabV3+, PyTorch (Python); Transformer-based models, Attention mechanisms (spatial + channel), Generative models (optional for reconstruction)
+Skeletonization Scikit-Image / FilFinder / OSMnx
+Graph Logic NetworkX; PyTorch Geometric (PyG) for advanced GNN approach
+Centrality Analysis Betweenness Centrality (NetworkX)
+Visualization QGIS / Matplotlib / Streamlit / Leaflet.js
+Compute Requirements
+Graph-theoretic post-processing and UI execution are lightweight and run on standard CPU architecture. Training state-of-the-art Deep Learning models within the 30-hour limit will require access to high-performance GPU instances, which can be sourced via local workstations.
+Expected Solution / Steps to be followed to achieve the objectives
+Phase I: Occlusion-Robust Segmentation (The Foundation)
+Data Preprocessing
+Tile images, normalize/enhance contrast, simulate occlusions, and balance dataset with occluded roads.
+Baseline Model Development
+Train a U-Net/DeepLabV3+ model, evaluate on occluded regions, and identify failure cases.
+Advanced Model Design
+Implement context-aware architectures (Transformer, attention), focusing on long-range dependencies.
+Loss Function Engineering
+Use combined Dice, IoU, and boundary-aware losses, with optional connectivity loss.
+Occlusion Handling Strategy
+Use context-based inference and multi-scale feature fusion, with optional inpainting.
+Phase II: Graph Skeletonization & Healing
+Thinning
+Apply morphological skeletonization to reduce binary masks into 1-pixel wide centerlines. Nodes are generated at intersections and line endpoints, while road segments are represented as edges.
+Topological Healing
+Use a Minimum Spanning Tree (MST) and Disjoint Set algorithm to bridge gaps caused by extreme occlusions. The algorithm evaluates logical gaps based on Euclidean distance and angular alignment to ensure the "healed" road follows a natural trajectory.
+Phase III: Network Analysis & Stress Testing
+Centrality Calculation
+Apply Betweenness Centrality to identify nodes that lie on the shortest paths across the city. A high centrality score indicates a critical bottleneck.
+Node Ablation Simulation
+Once the critical nodes are identified, the system performs a series of "Network Stress Tests" to quantify vulnerability. The algorithm systematically "removes" nodes with the highest Betweenness Centrality scores from the graph to simulate real-world closures (e.g., severe flooding or structural failure).
+Resilience Index Calculation
+The system recalculates the global network efficiency after each removal. The Resilience Index is defined as the ratio of the average shortest path length in the baseline network to that in the perturbed network. A lower R indicates a highly vulnerable network.
+Phase IV (Advanced): Interactive Dashboard
+The final stage is the development of a web-based visualisation tool (using Streamlit and Leaflet.js) to make the graph data actionable for non-technical planners:
+Heatmap Overlay
+A dynamic map layer that colors road segments based on their "Criticality Worth," allowing planners to see the city's "weakest links" at a glance.
+Simulation Toggle
+An interactive feature where a user can manually click a node to "disable" it. The dashboard instantly updates to show the rerouted paths and the estimated increase in travel time across the affected sector.
+Evaluation Parameters
+Core Technical Metrics
+Metric Description
+IoU & Dice Score Segmentation accuracy with specific focus on Occlusion-Recall (recovery of roads under shadows).
+Generalisation Success rate across diverse terrains - dense urban, forested suburban, and rural landscapes.
+Connectivity Ratio Percentage increase in the largest connected component after the MST healing phase.
+Topological Accuracy Comparison of the final graph against OpenStreetMap (OSM) benchmarks using Average Path Length error. Run shortest-path between random point pairs on ground-truth OSM vs. model graph and calculate error.
+Length-Complete / Relaxed IoU Introduces a tolerance buffer (3–5 pixels). If the predicted road pixel falls within the buffer zone of the ground truth road, it counts as a true positive. Prevents penalising minor alignment shifts.
+Image representing problem statement
+Flow diagram from raw Sentinel-2 imagery through ML extraction, skeletonization, topological healing, network analysis, stress testing, to an interactive visualization dashboard
+5 . AI-Powered Digital Twin of India's Climate using India's National Data
+Description
+A digital twin of the climate system targeting adaptation is expected to make use of observations, integrate several climate models to consider uncertainty sources, include applications for climate-sensitive sectors directly connected to the climate models, and provide interfaces to configure the simulations, output, and data consumers. An "AI-powered Digital Twin of India's Climate using national datasets" refers to the creation of a high-fidelity, dynamic virtual replica of India's climate system that continuously evolves using real-time and historical observations. This digital twin integrates multi-source data from Indian satellites (e.g., INSAT, Oceansat), ground-based meteorological networks (IMD), reanalysis products, and hydrological datasets to simulate atmospheric, oceanic, and land-surface processes at high spatial and temporal resolution. Leveraging advances in Artificial Intelligence, Machine Learning, and Data Assimilation, the system fuses heterogeneous datasets to generate near-real-time climate states and predictive scenarios. The digital twin can capture complex phenomena such as monsoon variability, extreme, drought evolution with improved accuracy compared to conventional models.
+The proposed "AI-Powered Digital Twin of India's Climate" directly aligns with ISRO's vision of leveraging space-based observations, geospatial technologies, and artificial intelligence for societal benefit. By integrating national datasets from ISRO platforms such as Bhuvan, MOSDAC, NICES, and other Earth observation missions, the solution creates a dynamic virtual replica of India's climate system for monitoring, forecasting, and scenario-based analysis. This challenge supports national priorities in climate resilience, disaster risk reduction, water and agricultural security, and sustainable development by enabling data-driven decision-making. It also advances the vision of 'Atmanirbhar Bharat' by developing indigenous AI-powered climate intelligence capabilities using India's own satellite, meteorological, and geospatial datasets, thereby strengthening national preparedness for climate change and extreme weather events.
+Objectives
+To design and develop a scalable framework for an AI-driven digital twin of India's climate using national datasets (satellite, ground observations, and reanalysis).
+To demonstrate the Proof of Concept (PoC) of the digital twin for key climate variables rainfall and temperature, by generating high-resolution analyses and short-term predictions over a selected pilot region.
+Interactive geospatial visualization on a map dashboard.
+A "what-if" simulation module showing impacts of temperature or rainfall changes
+Expected Outcomes
+Proof-of-Concept of Digital Twin
+AI-based prediction capability
+Visualization dash board
+Scenario simulation capability
+Scalable framework for national deployment
+Dataset Required
+Rainfall data: https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_25_Bin.html
+Max Temp. data: https://imdpune.gov.in/cmpg/Griddata/Max_1_Bin.html
+Min. Temp. data: https://www.imdpune.gov.in/cmpg/Griddata/Min_1_Bin.html
+The India Meteorological Department (IMD) provides high-resolution gridded rainfall and temperature datasets, which are widely used for climate monitoring, trend analysis, and weather prediction studies. These datasets offer long-term historical records with consistent spatial and temporal coverage across India, making them suitable for training AI models and validating forecasts. Further, the integration of IMD gridded datasets with INSAT satellite observations enables the development of a data-driven climate intelligence framework capable of capturing both surface and atmospheric conditions.
+The below Table provides detailed information data Collection:
+Climate Parameter Data download source
+INSAT Land Surface Temperature (LST) Product name: 3RIMG_L2B_LST
+https://www.mosdac.gov.in/
+INSAT Sea Surface Temperature (SST) Product name: 3RIMG_L2B_SST
+https://www.mosdac.gov.in/
+INSAT Rainfall Product name: 3RIMG_L2B_IMC
+https://www.mosdac.gov.in/
+Ground based gridded rainfall-IMD Product name: Gridded Rainfall (0.25 x 0.25)
+https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_25_Bin.html
+Ground based gridded Temperature-IMD Product name: Maximum Temperature (1.0 x 1.0)
+https://www.imdpune.gov.in/cmpg/Griddata/Max_1_Bin.html
+Suggested Tools/Technologies
+AI/Machine Learning/Deep learning frameworks (e.g., TensorFlow, PyTorch)
+Expected Solution / Steps to be followed to achieve the objectives
+The schematic Figure 1 illustrates a streamlined workflow for developing a Proof of Concept (PoC) AI-powered Digital Twin of India's Climate, focusing on rainfall and temperature. It begins with defining the problem and selecting a pilot region, followed by the collection of multi-source national datasets from agencies such as the India Meteorological Department and Indian Space Research Organisation. These datasets are then pre-processed and integrated into a consistent format suitable for modeling. An AI model, built using frameworks like TensorFlow or PyTorch, is trained to generate short-term predictions. The outputs feed into a digital twin simulation that represents the current and future climate state over the selected region. The system is subsequently validated against observations, visualized through interactive dashboards, and extended to scenario-based analysis, enabling users to explore "what-if" climate conditions and derive actionable insights for decision-making.
+Evaluation Parameters
+Problem Understanding & Clarity
+Data Usage & Pre-processing
+Model Development & Technical Approach
+Prediction Performance & Validation
+Digital Twin Concept Implementation
+Visualization & User Interface
+Innovation & Creativity
+Presentation & Communication
+Image representing problem statement
+Workflow diagram from problem definition and data collection through data processing, model development, training and validation, digital twin simulator, scenario analysis, and visualization
+–
+6. AI-Driven Automated Crop type, Moisture Stress Detection and irrigation advisory Across Growth Stages Using Moderate Resolution Spectral Signatures (Optical & Microwave Satellite Data)
+Overview
+Accurate and timely identification of crop types, detection of moisture stress across phenological stages, and translation of crop water deficit into practical irrigation advisories are critical for precision agriculture, drought monitoring, yield forecasting, climate-resilient farm management, and canal command-area water management. Satellite remote sensing, combining optical observations such as LISS-IV, LISS-III, AWiFS, Sentinel-2, Landsat and MODIS with microwave SAR observations such as EOS-04, Sentinel-1 and upcoming NISAR-SAR data, provides continuous and scalable monitoring support. Optical data capture vegetation vigour and biochemical condition, while SAR observations support all-weather monitoring during cloudy monsoon periods and are sensitive to crop structure and surface moisture.
+The proposed methodology is intended as an operational and nationally relevant extension of satellite-based agricultural monitoring. By integrating crop-type mapping, phenology-aware moisture stress assessment and irrigation advisory generation, the solution strengthens the type of intelligence required for programmes such as PMKSY, Digital Agriculture Mission, NMSA and PMFBY. The approach adds a near-real-time water-stress layer that can improve crop monitoring, reduce avoidable irrigation losses, support verifiable crop insurance and prepare users for the effective exploitation of indigenous and international optical and microwave satellite fleets.
+This proposal focuses on developing an AI-driven automated methodology for crop type classification, stage-wise phenological mapping, moisture stress detection, crop water deficit estimation using multi-source satellite data fusion, machine learning and deep learning models.
+Objective
+Develop an automated AI/ML methodology for crop type identification for the current cropped season using multi-temporal spectral signatures from the previous cropped season.
+Detect moisture stress dynamics across crop growth stages (Integrate phenology-aware modelling) using optical and / microwave indicators for stage-wise stress interpretation
+To develop a satellite-based system to estimate 8-day crop water deficit and generate irrigation advisory maps for canal command areas
+Expected Outcomes
+Within a 30-hour hackathon, a team can demonstrate a functioning pipeline by using a defined pilot area, pre-identified crop labels, cloud-hosted satellite collections and simplified irrigation-advisory logic
+A methodology and user interface for generating automated high-resolution crop type maps, stage-wise moisture stress and irrigation advisory maps.
+A dashboard-ready output package consisting of colour-coded stress maps, crop growth-stage interpretation, field or pixel-level irrigation advisory layers and time-series visualization.
+A scalable model design that can be extended from a pilot irrigation command area to larger agricultural regions and multiple crop seasons
+Datasets Required
+Optical satellite data: LISS-III/ AWiFS/ Sentinel-2/ Landsat / MODIS for vegetation vigour, phenology and spectral-index generation.
+Microwave SAR data: EOS-04 / Sentinel-1 for all-weather monitoring, backscatter analysis, support during cloud-contaminated kharif periods.
+Ancillary and meteorological data: Rainfall, reference evapotranspiration or weather-grid data, command-area boundary, canal command layers, soil and crop coefficient information.
+Ground information: Existing ground truth points on crop type information from the study area for model training and validation.
+The availability of most satellite sources through national and international portals makes the proposed workflow suitable for rapid prototyping as well as later operational scaling.
+Data access and readiness: LISS-III/AWiFS and related ISRO datasets can be sourced from Bhuvan or Bhoonidhi as applicable; Sentinel-1/Sentinel-2, Landsat and MODIS support open-access cloud or portal-based processing.
+Existing crop ground information and available software resources reduce start-up time for a 30-hour prototype.
+Suggested Tools / Technologies
+Programming and geospatial processing: Python, Google Earth Engine, MATLAB, R, GDAL, Rasterio and related geospatial libraries.
+Machine learning models: Random Forest and XGBoost for tabular and multi-temporal feature classification.
+Deep learning models: LSTM or Temporal CNN for time-series dynamics, and U-Net or related deep learning architectures for spatial classification where data volume permits.
+Libraries and frameworks: TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas and geospatial visualization libraries.
+Cloud and deployment resources: Google Earth Engine, Google Colab, AWS or ISRO Bhuvan-oriented for scalable processing and output hosting.
+The technology is proposed to support rapid development and transparent processing. Cloud platforms such as Google Earth Engine and Google Colab can be used for fast data ingestion, compositing and model execution, while Python, R, MATLAB or similar tools can support advanced analysis, modelling and visualisation.
+Expected Workflows / Solutions
+The proposed workflow is designed on a pilot command area for a 30 hour hackathon, while the same architecture can later be expanded to additional regions, seasons, crops and benchmark datasets.
+Data Pre-processing
+Atmospheric correction (optical data), Speckle filtering (SAR – e.g., Refined Lee filter), Temporal compositing (weekly/ fortnightly / monthly)
+Feature Extraction
+Vegetation indices: NDVI, EVI, NDWI. SAR features: VV, VH polarization, Ratio (VH/VV). Texture features (GLCM), Phenological metrics: Start of season (SOS), Peak growth, Length of growing period
+Crop Type Classification
+Train supervised ML models using labelled data, multi-temporal classification approach, Generate seasonal crop maps
+Moisture Stress Detection
+Integrate: NDVI anomalies, NDWI, SAR backscatter sensitivity, Develop stress indices: Vegetation Condition Index (VCI), Soil Moisture Index (SMI), Stage-wise stress classification
+Water deficit and Irrigation advisory maps
+Participants may adopt any methodology (physical crop water balance, crop coefficient / empirical equations) to estimate weekly (8-day) crop water demand (ETc), quantify water deficit against actual evapotranspiration and rainfall, and translate this deficit into an irrigation status map.
+AI/ML Model Development
+Combine: Satellite features, Train models: Random Forest / LSTM for temporal dynamics and generate predictive outputs
+Validation
+Compare with: Ground truth crop data, Accuracy metrics: Overall Accuracy, Kappa coefficient
+Output
+Crop classification map, Moisture stress maps (stage-wise), Time-series dashboards
+Evaluation Parameters
+Crop classification accuracy target: greater than 85% where representative training and validation samples are available.
+Moisture stress classification should be growth-stage aware and should show logical correspondence with satellite-based indices
+The prototype should not only classify crops but also demonstrate that the derived water-deficit and irrigation advisory layers are credible for command-area planning and consistent with available reference information.
+Image representing Problem statement
+Flow diagram from optical and microwave inputs through feature extraction and AI/ML training to crop maps, validation, and stage-wise crop stress outputs
+–
+7. AI-enabled Detection of Exoplanets from Noisy Astronomical Light Curves
+Objective
+Develop an AI-based data analysis pipeline capable of automatically detecting exoplanet transit signals from noisy astronomical light curve data.
+Details
+Exoplanet detection through transit photometry requires the identification of extremely small brightness variations in stars. For light curves of astronomical sources present in crowded fields, there can be significant contaminations arising from effects such as stellar blending by foreground or background sources in the aperture, and the intrinsic noise in the data due to the detector's response, to name a few.
+Apart from contamination, the brightness variations in the light curves can be due to a transiting planet across the host star's disk, an eclipsing stellar companion in binary star systems, or even starspots. Different phenomena give rise to distinct features in light curves, which, however, become difficult to disentangle while dealing with noisy datasets in crowded fields.
+The developed algorithm should, therefore, be able to achieve the following :
+Identify datasets with periodic dips in the star's light curve, potentially mimicking astrophysical phenomena.
+Develop a classification framework to categorize the light curve dips into transits, eclipses, blends, and other astrophysical categories.
+Apply the classifier on the given science datasets and correctly categorize the type of signals present in the data.
+Provide signal-to-noise ratio or significance levels of the identified events.
+For transit signals, estimate the parameters associated with the phenomenon, such as the transit depth, period, and duration.
+Data Required
+TESS raw light curves should be downloaded and used from the publicly available repository at https://archive.stsci.edu/tess/tic_ctl.html. It is advised to download a sector's high-cadence data for this work, which would contain around 20-30k light curves of different stars.
+A curated dataset will also be provided for different types of classifiers for already known exoplanets, false positives, and eclipsing binaries, etc., which would be useful to train the AI model.
+Suggested Tools/Technologies
+Publicly available Python tools and libraries can be used. No specialised software is needed to analyse the data.
+Expected Outcomes
+An AI-driven pipeline that robustly identifies and classifies dips (transit features) present in noisy light curves into potential astrophysical signals
+Estimation of the following parameters by light curve fitting on scientific datasets :
+Orbital period
+Transit Duration
+Transit depth
+Visualization of the light curve along with the detected and classified astrophysical signal
+Provide the confidence level of the detected signal
+A report (max 3 pages) is required, including the methodology, assumptions made, tools and libraries used, and how uncertainties are estimated.
+Evaluation Criteria
+Accuracy of the pipeline/software in event detection and classification
+Accuracy of the parameters estimated
+Methods/Approach used
+Visualization and clarity
+–
+8. Detection and Characterization of Subsurface Ice in Lunar South Polar Regions Using Chandrayaan-2 Radar and Imagery Data for Landing Site and Rover Traverse Planning
+Description
+The discovery and characterization of water-ice in the lunar South Polar Region is a high-priority scientific and exploration objective, particularly for enabling sustained human presence on the Moon. Observations from Chandrayaan-2 have opened new avenues to probe surface/subsurface using high-resolution optical and radar datasets. The ‘doubly shadowed craters’ in the lunar permanently shadowed regions (PSRs) provide access to some of the coldest environments on the Moon that are ideal candidates for long-term volatile preservation. However, identifying subsurface ice unambiguously and translating these detections into actionable exploration strategies (landing and rover traversal) remains a key challenge.
+Objective
+Identify and map potential subsurface ice bearing regions in the lunar south polar PSRs, with emphasis on ‘doubly shadowed craters’.
+Utilize radar polarimetric signatures to distinguish ice-rich regions within ‘doubly shadowed craters’ from rough, rocky terrains.
+Integrate terrain and illumination constraints to propose a scientifically viable and safe landing site near a ‘doubly shadowed crater’.
+Design an optimal rover traverse path from the landing site to the target ‘doubly shadowed crater’.
+Estimate the volume of subsurface ice within the top ~5 meters of lunar regolith at the identified ‘doubly shadowed crater’.
+Expected Outcomes
+Identification of high-probability subsurface ice regions in ‘doubly shadowed craters’
+A validated radar-based detection framework for subsurface ice
+A feasible landing site near scientifically relevant targets
+An optimized rover traverse path to access subsurface ice within ‘doubly shadowed crater’
+Quantitative estimates of subsurface ice volume within ‘doubly shadowed crater’
+Datasets Required
+Chandrayaan-2 Dual Frequency Synthetic Aperture Radar (DFSAR)
+Chandrayaan-2 Orbiter High Resolution Camera (OHRC)
+The participants will be supplied with Chandrayaan-2 DFSAR data of a ‘doubly shadowed crater’ located in the lunar south polar region.
+Suggested Tools / Technologies
+GIS platforms: QGIS / ArcGIS
+Programming: Python (NumPy, SciPy, GDAL, rasterio)
+Image processing: ENVI
+DFSAR Processing: MIDAS
+Terrain analysis: Digital Elevation Models (DEM tools)
+Path planning: Optimization algorithms / AI-based navigation models
+Visualization: QGIS / ArcGIS / MATLAB / Python-based plotting
+Expected Workflows / Solutions
+Map permanently shadowed regions and identify ‘doubly shadowed craters’ using illumination models and OHRC imagery.
+Analyze DFSAR data to compute radar parameters such as Circular Polarization Ratio (CPR) and Degree of Polarization (DOP). Apply refined criteria (e.g., CPR > 1 and DOP < 0.13) to identify potential subsurface ice signatures.
+Study crater morphology, slopes, boulder distribution, and surface roughness using OHRC data.
+Evaluate terrain safety and proximity to ice-bearing regions.
+Design an optimal and safe path considering terrain hazards and solar power constraints.
+Use radar backscatter models and dielectric assumptions to estimate ice concentration and volume within the top 5 meters.
+Evaluation Parameters
+Scientific robustness of ice detection approach
+Accuracy and clarity in data analysis and interpretation
+Feasibility of proposed landing site
+Efficiency and safety of rover traverse design
+Innovation in methodology and tools used
+Clarity of presentation and documentation
+Image Representing Problem Statement
+Doubly shadowed crater within Faustini permanently shadowed region at the lunar South Pole
+Example of a doubly shadowed crater within Faustini permanently shadow region in the lunar South Pole
+During the 30 hours of the hackathon, participants have to conduct detailed characterization of subsurface ice in the given ‘doubly shadowed crater’ in the lunar South Polar Region and investigate evidence of subsurface ice beneath the floor of the crater. Subsequently, the participants have to design an optimal and safe rover traverse path to access subsurface ice in the ‘doubly shadowed crater’ considering terrain hazards and solar power constraints.
+Implications of the Work
+This problem statement directly contributes to future lunar exploration missions led by ISRO by enabling:
+Identification of in-situ resource utilization (ISRU) sites
+Strategic planning for lunar landing missions
+Improved understanding of subsurface ice distribution on the Moon
+Advancement in planetary radar remote sensing techniques
+The outcomes could play a crucial role in shaping future robotic and human exploration of the lunar South Pole.
+–
+9. Developing and optimizing algorithms for Wavefront reconstruction and turbulence characterization using Shack-Hartmann Wavefront Sensor (SH-WFS) time-series data
+Description
+Turbulence in the atmosphere distorts a plane-parallel wavefront propagating through it. An SH-WFS samples this distorted wavefront using an array of small lenslets. This Microlens Array (MLA) creates a spot-field on the detector and the deviation of these spots from their reference position is used to derive the reconstructed wavefront and its associated zernike coefficients. The conjugate of this reconstructed wavefront is typically used to derive an actuator map in units of the actuator stroke length which is then fed to a deformable mirror (DM) to correct for this distortion in real-time.
+Objectives
+Objective is to use SH-WFS frames collected during turbulence simulated in the laboratory and to develop image processing algorithms to perform wavefront reconstruction, turbulence characterization and actuator map determination for the deformable mirror. Atmospheric turbulence has an inherent coherence timescale of the order of milliseconds and so, the reconstruction algorithm must be fast enough to measure the distortion and correct for it. Statistical parameters characterizing the strength of turbulence, like the Fried parameter (r0) and the coherence time (τ0), are also to be derived from the same data.
+Expected Outcomes
+Reconstructed wavefront phase maps (W(xi , yi)) for each SH-WFS frame and the characterized turbulence in terms of the Fried parameter (r0) and the coherence time (τ0). In addition, the actuator maps (A(xi , yi) for each reconstructed wavefront map) in terms of the actuator stroke length of deformable mirror is to be derived. The effect of inter-actuator coupling needs to be incorporated while deriving these actuator maps.
+Data Required
+A time series of SH-WFS frames (essentially .bmp files) captured at a time interval of a few milliseconds by a science-grade camera.
+Basic information of frame data: pixel size and frame resolution
+Basic information of MLA: size, number of lenslets and focal length
+Pupil size of the turbulated beam
+DM information and interactuator coupling. This dataset shall be provided.
+Suggested Tools/Technologies
+Since the corrections are to be applied at a rate faster than at which the atmosphere changes (~10ms), it is advised to develop and optimize algorithms for a low-level language like C. Several methods exist in literature to perform wavefront reconstruction like zonal/modal methods using orthogonal polynomials or direct integration. Several open-source libraries also exist which maybe utilized to perform/optimize complex mathematical computations.
+Expected Solution / Steps to be followed to achieve the objectives
+For each WFS frame, identify the centroid position of each spot associated with a sub-aperture using a suitable centroiding algorithm.
+For each spot, calculate the spot deviation from its reference position.
+Utilize an existing technique (e.g. zonal/modal methods) from the literature or develop your own algorithm to reconstruct the wavefront phase map. Student must consider that the actuator grid of DM and the lenslet grid of MLA are arranged in a Fried geometry.
+Use the reconstructed maps or associated orthogonal basis coefficients (e.g. Zernike coefficients) to derive turbulence characteristics.
+Use the conjugate of the reconstructed wavefront to derive an actuator map in terms of the actuator stroke lengths keeping in mind the inter-actuator coupling.
+Evaluation Criteria
+Reconstruction of the wavefront phase maps (W(xi , yi)) for each frame that conform to the turbulence characteristics.
+Deriving statistical parameters indicating the strength of turbulence.
+Speed and computational efficiency of the developed algorithms
+Images Representing the Problem Statement
+Images representing the problem statement
+–
+10 .Infrared image colorization and enhancement for improved object interpretation
+Description
+Satellite remote sensing frequently relies on infrared (IR) sensors to capture data during night time or under adverse weather conditions. However, IR images are inherently monochrome, suffer from low contrast, and lack the rich semantic textures found in visible-spectrum (RGB) imagery. This makes it difficult for human analysts and computer vision models to accurately identify objects like vehicles, buildings, roads, and vegetation.
+This challenge focuses on developing an end-to-end framework that simultaneously enhances the structural details of IR satellite images and predicts realistic colorization (RGB translation). By transforming low-visibility IR data into high-fidelity, colorized images, this solution will drastically improve situational awareness and automated object interpretation.
+Objective
+Enhancement via super-resolution/sharpening
+Improve the visibility of faint edges, textures in raw IR imagery by super-resolution/sharpening of infrared images.
+Predict Realistic Colorization
+Map monochrome IR features to realistic RGB representations (e.g., turning a thermal signature of a forest into natural green, water bodies into blue) without introducing artifacts.
+Preserve Semantic Integrity
+Ensure that the colorization and enhancement process does not distort or misrepresent actual ground truth objects.
+Boost Downstream Tasks
+Ensure the output images significantly improve the accuracy of subsequent object detection and segmentation tasks.
+Expected Outcomes
+Deep Learning Pipeline
+A trained model capable of taking a single-channel IR image and outputting a high-resolution, colorized RGB image.
+Dataset Required
+Landsat 8/9 (USGS): High-quality thermal and infrared bands for training and validation.
+Suggested Tools / Technologies
+Framework: A comprehensive, Python-based end-to-end framework.
+Models: Deep learning computer vision models for image-to-image translation (e.g., CycleGAN, Pix2Pix, or other state-of-the-art architectures).
+Libraries: Specialized libraries for image processing and geospatial data handling, such as OpenCV, Rasterio, and GDAL.
+Expected Solution / Steps to be followed to achieve the objectives
+Data Acquisition & Pre-processing
+Collect paired IR and RGB datasets from Landsat 8/9. Perform Co-registration if required to ensure the IR and RGB images are perfectly aligned pixel-by-pixel.
+Image Enhancement (Super-Resolution)
+Implement a Super-Resolution (SR) module to upscale low-resolution IR images and sharpen faint edges.
+Colorization Framework (IR → RGB)
+Develop a IR to RGB colorization model with needed pre and post processing steps.
+Semantic Constraint Integration
+Incorporate a semantic mask or a pre-trained land-cover classifier to ensure specific IR signatures (e.g., water) are consistently mapped to the correct colors (e.g., blue).
+Evaluation & Validation
+Compare output images against ground-truth RGB images using proper metrics.
+Evaluation Parameters
+Image Quality
+PSNR (Peak Signal-to-Noise Ratio)
+To measure reconstruction quality.
+SSIM (Structural Similarity Index)
+To ensure structural integrity is preserved.
+FID (Fréchet Inception Distance)
+To evaluate the realism of the generated RGB images.
+Task-Based Metrics
+Inference Time
+The time taken to process one satellite tile (to ensure the solution is scalable).
+Visual Inspection
+Qualitative analysis to ensure no "hallucinations" (fake objects) are created by the deep learning model.
+–
+11. Cross-Modal Satellite Image Retrieval Using Multi-Sensor Remote Sensing Data
+Description
+Satellite remote sensing systems acquire Earth observation data using different sensors such as optical, multispectral, hyperspectral, Synthetic Aperture Radar (SAR), and elevation-based sensors. Each sensor captures different physical characteristics of the Earth surface. Optical and multispectral images provide rich visual and spectral information, while SAR images provide structural information and can operate under cloud cover and night-time conditions.
+With the rapid growth of satellite image archives, content-based retrieval of relevant images has become an important requirement. Traditional metadata-based search may not be sufficient when similar land-cover or land-use regions are observed under different seasons, acquisition conditions, or sensor modalities. Therefore, this problem focuses on developing a multi-modal satellite image retrieval system for both same-modal and cross-modal retrieval.
+Objectives
+To develop an efficient satellite image retrieval framework that retrieves semantically similar remote sensing images from the same modality as well as from different modalities. The system should learn a common representation space where images with similar land-cover, land-use, or scene-level content are close to each other, irrespective of sensor modality.
+Same-modal retrieval, such as optical-to-optical, SAR-to-SAR, and multispectral-to-multispectral retrieval.
+Cross-modal retrieval, such as optical-to-SAR, SAR-to-optical, optical-to-multispectral, and multispectral-to-optical retrieval.
+Ranking of the top-5 and top-10 most relevant images for each query image.
+Efficient retrieval with low average retrieval time per query.
+Expected Outcomes
+A retrieval system that accepts a query satellite image from one modality and returns a ranked list of the most relevant images from a gallery database. The gallery may contain images from the same modality or different modalities. The final system should report top-5 and top-10 retrieval results along with retrieval time required per query.
+Dataset Required
+Multi-sensor remote sensing image data consisting of two or more aligned or semantically associated modalities. The dataset may include optical RGB images, multispectral images, SAR images, and optional land-cover or land-use labels. Each sample may correspond to the same or nearby geographic location observed using different sensors. Labels or metadata may be used for evaluating semantic relevance among retrieved images.
+Suggested Tools/Technologies
+Both classical machine learning and deep learning based techniques can be considered. Participants may use CNNs, Vision Transformers, Siamese or triplet networks, metric learning, contrastive learning, self-supervised learning, multi-modal representation learning, foundation model based feature extraction, or efficient vector search libraries such as FAISS. Use of pre trained model or foundation models are also allowed.
+Expected Solution / Steps to be followed to achieve the objectives
+Probable steps for data preparation and retrieval pipeline
+Prepare paired or semantically associated multi-sensor satellite image data for training and evaluation.
+Apply preprocessing, normalization, resizing, and modality-specific handling for optical, multispectral, and SAR images.
+Define query and gallery sets for same-modal and cross-modal retrieval evaluation.
+Probable steps for data preparation and retrieval pipeline
+Select or design a feature extraction backbone suitable for remote sensing images.
+Learn modality-specific or shared embedding using supervised, self-supervised, contrastive, or metric learning approaches.
+Align features from different modalities into a common embedding space.
+Generate compact image descriptors for all query and gallery images.
+Probable steps for retrieval and ranking
+Compute similarity between query and gallery descriptors using cosine similarity, Euclidean distance, or other suitable measures.
+Rank gallery images according to similarity score.
+Return top-5 and top-10 retrieved images for each query.
+Measure average retrieval time per query, including feature matching or similarity search time.
+Evaluation Criteria
+The evaluation will be carried out for both same-modal retrieval and cross-modal retrieval. For each query image, the submitted system should produce top-5 and top-10 retrieved images from the gallery. The retrieved images will be compared with the relevant ground-truth set based on semantic class, geographic correspondence, or predefined relevance labels.
+F1-score@5 for same-modal retrieval.
+F1-score@10 for same-modal retrieval.
+F1-score@5 for cross-modal retrieval.
+F1-score@10 for cross-modal retrieval.
+Average retrieval time per query.
+The final ranking may consider both retrieval accuracy and computational efficiency. Higher F1-scores and lower retrieval time will be preferred. Cross-modal retrieval may be given additional importance because it is more challenging than same-modal retrieval.
+–
+12 .Fill in the Frames Seamlessly - Enhancing Temporal Resolution of Satellite Imagery using the techniques of AI/ML based on Optical Flow
+Description
+Satellite images for geo-stationary satellites are often captured at fixed intervals (e.g., every 30 minutes for geostationary satellites like INSAT, every 10 minutes for Himawari/GOES satellites or every few days for polar-orbiting satellites). This leads to limitations in temporal resolution that restricts near real-time monitoring of dynamic phenomena such as fire, cyclones, thunderstorms, floods and rapid land changes. Traditional optical-flow based temporal interpolation is limited with incorrect results (blurred images & other artefacts) and they fail to capture fast-moving or non-linear changes in cloud dynamics.
+This problem proposes to develop an AI/ML based Optical Flow frame interpolation technique to generate intermediate frames between two consecutive satellite images to effectively enhance temporal resolution, enabling more frequent observations without additional satellite resources.
+Objective
+The developed software should include and accomplish the following steps:
+Develop an optical flow-based model to estimate motion vectors between consecutive satellite frames.
+Generate synthetic intermediate frames using Deep Learning frame interpolation methods.
+Improve temporal resolution of satellite imagery (e.g., from 30 minutes to 15 minutes and further to 7.5 minutes interval or equivalent).
+Validate results against real higher temporal resolution datasets (like Himawari/GOES-19) using image similarity metrics such as SSIM, MSE, PSNR, FSIM, etc.
+Expected Outcomes
+Generation of synthetic intermediate frames using Deep Learning based frame interpolation methods with Optical Flow for INSAT-3DS/3DR imagery.
+Dataset Required
+Thermal Infrared band data (around 10 micrometer) of geo-stationary satellite datasets to be used from online sources. The input data should be .nc or .h5 files.
+GOES-19 ABI Channel 13 data from NOAA GOES-19 AWS bucket
+INSAT-3DS/3DR TIR1 channel data from mosdac
+Himawari-8.
+Suggested Tools/Technologies
+Deep Learning based video interpolation models can be explored and trained/fine-tuned using the above datasets (e.g., Super SloMo, RIFE, etc).
+Web technologies to be used for visualisation (Step 2 of Expected Solution).
+Expected Solution / Steps to be followed to achieve the objectives
+Solution for the challenge should include a prototype for AI-powered frame interpolation for satellite imagery that should comprise of:
+Frame Interpolation
+Takes consecutive satellite images and generates intermediate frames. Should include:
+Optical Flow Estimation: can explore and use AI/ML models. Preferably, models are to be trained on satellite data collected from Step A.
+Frame Interpolation: can explore and use interpolation networks for synthesis of new frames.
+The input and output files to the model should be .nc files.
+Visualisation
+Develop a dashboard showing original vs. interpolated satellite animations. Should include:
+After interpolation of a set of satellite frames, the output should be displayed with time-lapse animations.
+Animations to be present both for ground truth (original satellite frames) and also for interpolated frames.
+Generate a report comparing results with ground truth (existing frames). Should include:
+Comparison of generated frames with the ground truth using metrics of SSIM, MSE, FSIM, etc. Include plots of the results
+Any other suitable metrics can also be explored and used. Metrics should be suitable to capture the cloud movements.
+INSAT-3DS
+Model to be applied on INSAT-3DR/3DS data.
+Based upon the best model created/used/trained from above steps, the intermediate frames of the INSAT-3DS are to be interpolated and the animations are to be prepared for the INSAT data at a temporal resolution of 15 minutes.
+For Steps 1-3, GOES-19 data or any other geo-stationary satellite of high temporal frequency, may be used, e.g., taking the frames of 00.00 hrs and 00.20 hrs as input, the model should output the frame at 00.10 hrs.
+For Step 4, the above trained model(s) have to be used on INSAT-3DS data.
+Evaluation Parameters
+The evaluation would be done on:
+Frame Interpolation: Image quality metrics of MSE, PSNR and any other image metrics of how the generated frame is different from the ground truth
+Visualisation: Web GUI Design
+Subject to Visual Quality of the INSAT-3DS interpolation images.
+–
+13. Air-Gapped Predictive Copilot for Secure MPLS Operations
+Description
+Modern enterprise and government networks increasingly rely on SD-WAN deployments running over MPLS underlays to deliver resilient, application-aware connectivity across distributed branches, datacenters, and cloud environments. As these networks grow in complexity, operational visibility and response speed become critical to maintaining service quality and security posture.
+Conventional NOC tooling remains predominantly reactive — faults are detected only after user-visible service degradation has occurred.
+Two compounding challenges define this operational gap:
+Reactive detection: threshold-based alerts fire only after performance thresholds are breached, providing no time for pre-emptive intervention.
+Air-gap constraints: regulated and government environments prohibit cloud-connected AI inference tools, leaving operators without intelligent guidance in the most security-sensitive deployments.
+This problem statement calls for an autonomous, air-gapped offline AI NOC Copilot that predicts network failures before operational impact, explains reasoning in natural language, and operates entirely within an air-gapped network
+Objectives
+Objective 1 — Simulated SD-WAN/MPLS Environment
+Construct a reproducible, multi-site simulated network topology representative of real-world enterprise deployments, including:
+Branch, hub, and datacenter sites with CE/PE/P device roles
+MPLS forwarding plane, VPN segmentation, and traffic engineering constructs
+SD-WAN IPSec overlay tunnels, dynamic routing (BGP/OSPF), and QoS policies
+Realistic application traffic flows and configurable fault injection capabilities
+Objective 2 — Predictive Fault Analytics Engine
+Develop machine learning and statistical models that detect precursor conditions rather than threshold breaches:
+Time-series forecasting for congestion buildup, interface utilization saturation, and latency drift
+Routing instability detection — BGP/OSPF convergence stress, route flapping precursors, path asymmetry
+Tunnel health degradation scoring — packet loss progression, jitter trends, rekey anomalies
+Time-to-impact estimation providing actionable lead times before service breach
+Objective 3 — Offline LLM NOC Copilot
+Deploy a fully self-hosted, air-gapped LLM to provide natural-language decision support:
+Local model packaging — quantized LLM bundled within the air-gapped environment
+Retrieval-Augmented Generation (RAG) over internal artifacts only — topology maps, runbooks, past incidents
+Structured copilot responses including predicted issue, confidence score, root-cause hypothesis, affected scope, and recommended actions
+Natural-language query interface for NOC operators
+Objective 4 — Integrated NOC Workflow Automation
+Minimize manual troubleshooting effort by automating key NOC workflows:
+Continuous topology awareness and dynamic graph-based event correlation
+Confidence-scored alert prioritization to reduce alert fatigue
+Automated playbook suggestion and action sequencing
+Operator-ready incident summaries with estimated impact and urgency classification
+Expected Outcomes
+The platform must enable NOC operators to answer three operational questions in real time:
+Q1: What is likely to fail next — and when?
+Q2: Why is risk assessed as elevated — which signals contributed?
+Q3: What corrective action should be taken before SLA or security impact occurs?
+Success is defined not by whether the system can detect a failure that has already occurred, but by whether it can forecast degradation with sufficient lead time for the NOC to intervene preventively, and whether the LLM copilot can communicate that forecast in operator-ready language without any dependency on external networks or cloud APIs.
+Dataset Required
+All data is generated within the simulated environment and must remain within the air-gapped boundary:
+SNMP interface utilisation, latency, jitter, and error counters
+Syslog and routing protocol events (BGP/OSPF adjacency changes, route advertisements)
+NetFlow/IPFIX flow records and tunnel statistics
+Streaming telemetry from SD-WAN controllers
+Injected fault and adversarial scenario ground-truth labels for model training and validation
+Suggested Tools / Technologies (but not limited to)
+Network simulation: EVE-NG, GNS3, or Containerlab
+Telemetry pipeline: Telegraf, Prometheus, Elasticsearch, or Kafka
+Predictive models: LSTM, Prophet, graph-based anomaly detection, ensemble classifiers
+Offline LLM: Mistral 7B, LLaMA 3 8B, or Phi-3 (quantized for on-premises deployment)
+RAG / vector database: local deployment (no cloud dependency)
+Traffic generation and fault injection tooling
+Expected Solution / Steps to be Followed to Achieve the Objectives
+Phase 1 — Network Simulation
+Build the simulated SD-WAN over MPLS topology. Configure multi-site topology with branch, hub, and datacenter nodes; establish MPLS forwarding, VPN segmentation, dynamic routing protocols, and overlay tunnels. Deploy traffic generation tools and implement fault injection capabilities for scenario validation.
+Phase 2 — Telemetry Pipeline
+Deploy a local telemetry collection stack to ingest and normalise signals from all simulated devices. Align interface utilisation, latency, jitter, BGP/OSPF events, tunnel statistics, syslog events, controller changes, and flow records into a time-series dataset. All data remains within the air-gapped boundary.
+Phase 3 — Predictive Modelling
+Train and validate predictive models against historical telemetry using injected fault scenarios as ground truth. Evaluate model candidates on precision, recall, false-positive rate, and prediction lead time. Select or ensemble the best-performing combination for production inference.
+Phase 4 — Offline LLM Deployment
+Select and quantize a compact open-source LLM for on-premises deployment. Package the model with all runtime dependencies into a portable bundle with all outbound network access disabled. Implement a RAG pipeline connecting the LLM to a local vector database populated with topology metadata, alert context, runbooks, and past incident records.
+Phase 5 — Copilot Integration & Decision Support
+Wire predictive model outputs and network telemetry into the LLM context window via the RAG pipeline. Configure the copilot to produce structured responses for every alert, including: predicted issue type, confidence score, probable root cause, affected sites and services, and estimated time-to-impact.
+Phase 6 — Scenario Validation
+Inject a set of realistic fault and adversarial scenarios and measure platform response:
+For each scenario, record prediction lead time, copilot explanation quality, and accuracy of recommended remediation.
+Progressive congestion buildup on a hub-spoke link
+BGP route flap with downstream path reroute cascade
+Intermittent MPLS underlay failure with tunnel degradation
+Controller misconfiguration leading to policy drift
+Evaluation Parameters
+Evaluation Dimension Weight Key Criteria
+Technical Merit 35% Prediction accuracy and lead time — how early and how accurately does the platform forecast faults and anomalies before impact?
+Copilot Effectiveness 35% Copilot quality — are explanations correct, operator-relevant, and grounded in local retrieval without hallucination?
+Security & Offline Compliance 20% Air-gap integrity — verifiably zero outbound dependency during runtime; offline security controls implemented.
+Documentation Quality 10% Clarity of documentation, architecture, and design rationale.
+–
+14. Forecasting Energetic Particle Radiation Environment for ISRO's Geostationary Satellites
+Description
+To develop and demonstrate an algorithm to predict energetic particle fluxes of electrons at geostationary orbit. The algorithm should be able to predict the harsh radiation fluxes at least 30 to 45 minutes in advance, and also give a reasonable forecast for 6 hours and 12 hours ahead.
+Objective
+Develop an algorithm, preferably using Python or any other high-level language, for reading, processing, and visualizing the electron flux and solar wind data, which is archived in CDF format
+Identify an AI/ML algorithm for time-series forecasting
+Develop, fine-tune, and optimize the algorithm for training, validation, and testing.
+Demonstration and visualisation of the algorithm outputs and their accuracy.
+Expected Outcomes
+Algorithm for reading, processing, visualization, and forecasting of energetic electron fluxes at geosynchronous orbit.
+Dataset Required
+GOES series >2 MeV electron fluxes in cdf format.
+Data for 11 years from the GOES satellite should be provided.
+Data for 11 years from the Wind spacecraft, mainly solar wind parameters: speed, interplanetary magnetic field, and density, should be provided.
+For comparison of the forecasted flux at Indian longitude, electron fluxes from ISRO's GRASP/GSAT payload should be provided for 1-2 years.
+Suggested Tools/Technologies
+Python or any other high-level language for reading, processing, and visualization of data.
+AI/ML tools/sub-routines (Teams are encouraged to develop their own routines).
+A basic understanding of Earth's radiation belts, solar wind, and related data products.
+Expected Solution / Steps to be followed to achieve the objectives
+Reading and visualization of electron flux and solar wind data from archived CDF files.
+Based on science domain knowledge, identify important solar wind variables for forecasting electron fluxes.
+Preprocessing data for the identified AI/ML algorithm. Removing spike, interpolation, or omission of missing data, etc.
+Identifying desired AI/ML to do multi-step forecast fluxes accounting for the time history of inputs and outputs.
+Predicting the electron fluxes half an hour in advance also provides a forecast for 6 hours and 12 hours ahead.
+Evaluation Parameters
+An understanding of the basics of solar wind and the radiation belt.
+Correctness of reading and visualization of the solar wind and radiation belt electron fluxes data
+Identification and optimization of an AI/ML algorithm to get the best performance.
+Accuracy of the predicted fluxes at geostationary orbit.
+Timeline
+–
+15. Forecasting and/or Nowcasting of Solar Flares using combined Soft and Hard X-ray data from Aditya-L1
+Description
+Solar flares are sudden, intense bursts of radiation originating from the release of magnetic energy in the solar atmosphere. These events can trigger severe space weather disruptions, impacting Earth-bound satellite communications, GPS navigation, and power grids. Anticipating these disruptions is critical for infrastructure safeguarding.
+ISRO's Aditya-L1 mission continuously monitors the Sun from Lagrange Point L1 using two X-ray payloads: SoLEXS (Solar Low Energy X-ray Spectrometer, capturing soft X-rays) and HEL1OS (High Energy L1 Orbiting X-ray Spectrometer, capturing hard X-rays).
+This challenge requires participants to build an automated algorithmic pipeline that uses the combined time-series data from SoLEXS and HEL1OS to detect (nowcast) or predict (forecast) these solar flares.
+Objectives
+To design an automated solar flare detection algorithm for the nowcasting (real-time detection and classification) of solar flares using soft and hard X-ray data.
+To build a predictive algorithm for the forecasting of solar flares by identifying precursor patterns in soft and hard X-ray light curves before actual solar flare occurs.
+Expected Outcomes
+An automated database of nowcasted solar flares, generated by combining soft and hard X-ray light curves.
+A trained model capable of forecasting flares with a quantifiable lead time.
+Interface that visualizes the X-ray light curves and triggers with visual alerts when a flare is nowcasted or forecasted.
+Dataset Required
+Primary Data: Aditya-L1 SoLEXS (Level-1) and HEL1OS (Level-1) data, accessible via the ISRO ISSDC PRADAN portal.
+Participants can use any other supplementary datasets.
+Suggested Tools/Technologies
+SoLEXS and HEL1OS data processing software accessible via the ISRO ISSDC PRADAN portal.
+Any other open-source tools.
+Expected Solution / Steps to be followed to achieve the objectives
+Download SoLEXS and HEL1OS from the ISSDC portal. Write scripts to read SoLEXS and HEL1OS time-series light curve data.
+Visually understand typical solar flare light curve observed in soft and hard X-rays.
+Algorithmic Nowcasting: Build algorithms to detect flares independently in both soft and hard X-rays. Combine these independent catalogues to generate a master catalogue.
+Predictive Modelling: Train a time-series model using combined dataset to predict the probability of a flare occurring in the next N minutes.
+Evaluation Criteria
+Detection of low- and high-class flares
+High True Positive Rate and low False Alarm Rate for predictions.
+Lead Time of predictions: How many minutes before the flare peak the model triggers an alert.

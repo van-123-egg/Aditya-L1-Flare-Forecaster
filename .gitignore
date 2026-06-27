@@ -1,0 +1,20 @@
+# Datasets (Raw and Extracted)
+dataset/
+hel1os/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Virtual Environments
+venv/
+.env
+
+# Large Unused Models / Logs
+*.log
+.DS_Store
+
+# Streamlit specific
+.streamlit/
+
+# Note: We are allowing *.npz and *.pkl so judges can see the trained models and run the dashboard!

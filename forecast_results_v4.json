@@ -1,0 +1,19 @@
+{
+  "version": "v4",
+  "xgb": {
+    "roc_auc": 0.7369565602836878,
+    "pr_auc": 0.37212322710883017,
+    "threshold": 0.6600000000000001,
+    "lead_times": [],
+    "n_detected": 0,
+    "n_total": 0
+  },
+  "lstm": {
+    "roc_auc": 0.7853954393223009,
+    "pr_auc": 0.32568534796805104,
+    "threshold": 0.49000000000000005,
+    "lead_times": [],
+    "n_detected": 0,
+    "n_total": 0
+  }
+}

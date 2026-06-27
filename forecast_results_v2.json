@@ -1,0 +1,188 @@
+{
+  "roc_auc": 0.6923362653974898,
+  "pr_auc": 0.08382013203857058,
+  "tpr": 0.0380952380952381,
+  "far": 0.0048142333856619575,
+  "tp": 12,
+  "tn": 9509,
+  "fp": 46,
+  "fn": 303,
+  "lead_times": [
+    {
+      "flare_id": "SLX_20260606_001",
+      "class": "C",
+      "lead_time_min": 0,
+      "date": "2026-06-06"
+    },
+    {
+      "flare_id": "SLX_20260606_002",
+      "class": "C",
+      "lead_time_min": 0,
+      "date": "2026-06-06"
+    },
+    {
+      "flare_id": "SLX_20260606_003",
+      "class": "C",
+      "lead_time_min": 1.45,
+      "date": "2026-06-06"
+    },
+    {
+      "flare_id": "SLX_20260606_004",
+      "class": "B",
+      "lead_time_min": 0,
+      "date": "2026-06-06"
+    },
+    {
+      "flare_id": "SLX_20260607_001",
+      "class": "C",
+      "lead_time_min": 0,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260607_002",
+      "class": "C",
+      "lead_time_min": 0,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260607_003",
+      "class": "B",
+      "lead_time_min": 2.4833333333333334,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260607_004",
+      "class": "B",
+      "lead_time_min": 1.3166666666666667,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260607_005",
+      "class": "C",
+      "lead_time_min": 0.38333333333333336,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260608_001",
+      "class": "B",
+      "lead_time_min": 0,
+      "date": "2026-06-08"
+    },
+    {
+      "flare_id": "SLX_20260608_002",
+      "class": "B",
+      "lead_time_min": 0,
+      "date": "2026-06-08"
+    },
+    {
+      "flare_id": "SLX_20260608_003",
+      "class": "C",
+      "lead_time_min": 0.08333333333333333,
+      "date": "2026-06-08"
+    },
+    {
+      "flare_id": "SLX_20260610_001",
+      "class": "C",
+      "lead_time_min": 0,
+      "date": "2026-06-10"
+    },
+    {
+      "flare_id": "SLX_20260610_002",
+      "class": "C",
+      "lead_time_min": 2.466666666666667,
+      "date": "2026-06-10"
+    },
+    {
+      "flare_id": "SLX_20260610_003",
+      "class": "B",
+      "lead_time_min": 0,
+      "date": "2026-06-10"
+    },
+    {
+      "flare_id": "SLX_20260611_001",
+      "class": "C",
+      "lead_time_min": 0,
+      "date": "2026-06-11"
+    },
+    {
+      "flare_id": "SLX_20260611_002",
+      "class": "M",
+      "lead_time_min": 0.05,
+      "date": "2026-06-11"
+    },
+    {
+      "flare_id": "SLX_20260611_003",
+      "class": "B",
+      "lead_time_min": 0,
+      "date": "2026-06-11"
+    },
+    {
+      "flare_id": "SLX_20260612_001",
+      "class": "M",
+      "lead_time_min": 0,
+      "date": "2026-06-12"
+    },
+    {
+      "flare_id": "SLX_20260612_002",
+      "class": "C",
+      "lead_time_min": 0,
+      "date": "2026-06-12"
+    },
+    {
+      "flare_id": "SLX_20260613_001",
+      "class": "B",
+      "lead_time_min": 2.6666666666666665,
+      "date": "2026-06-13"
+    }
+  ],
+  "n_flares_detected": 8,
+  "n_flares_total": 21,
+  "threshold": 0.8500000000000002,
+  "feature_names": [
+    "mean",
+    "std",
+    "min",
+    "max",
+    "median",
+    "skewness",
+    "kurtosis",
+    "iqr",
+    "p90",
+    "p99",
+    "log_mean",
+    "log_std",
+    "log_max",
+    "current",
+    "current_raw",
+    "current_log",
+    "ratio_10_300",
+    "ratio_30_300",
+    "ratio_60_300",
+    "deriv_mean",
+    "deriv_max",
+    "deriv_min",
+    "deriv_std",
+    "deriv_current",
+    "deriv_recent_mean",
+    "deriv_recent_max",
+    "accel_mean",
+    "accel_max",
+    "accel_current",
+    "recent_vs_earlier_mean",
+    "recent_vs_earlier_max",
+    "last_1min_vs_mean",
+    "trend_slope",
+    "trend_intercept",
+    "background",
+    "current_over_bg",
+    "max_over_bg",
+    "monotonic_rise_score",
+    "seg_ratio_last_first",
+    "zero_crossings",
+    "cv",
+    "n_peaks",
+    "max_peak_height",
+    "hour_sin",
+    "hour_cos"
+  ]
+}

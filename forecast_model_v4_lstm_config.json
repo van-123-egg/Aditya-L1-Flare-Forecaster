@@ -1,0 +1,40 @@
+{
+  "version": "v4_lstm",
+  "n_slx_channels": 5,
+  "n_hel_channels": 2,
+  "n_conv_filters": 64,
+  "n_lstm_hidden": 128,
+  "n_lstm_layers": 2,
+  "dropout": 0.3,
+  "threshold": 0.49000000000000005,
+  "ch_means": [
+    24.062946319580078,
+    32.3514289855957,
+    40.127655029296875,
+    11.424921035766602,
+    0.9826146364212036,
+    0.0,
+    0.0
+  ],
+  "ch_stds": [
+    199.88909912109375,
+    33.66536331176758,
+    116.65714263916016,
+    117.1082534790039,
+    19.37070655822754,
+    1e-06,
+    1e-06
+  ],
+  "channel_names": [
+    "slx_total",
+    "slx_soft",
+    "slx_medium",
+    "slx_hard",
+    "slx_vhard",
+    "hel_cdte",
+    "hel_czt"
+  ],
+  "ts_downsample": 10,
+  "history_window": 3600,
+  "horizon_sec": 900
+}

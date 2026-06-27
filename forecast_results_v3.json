@@ -1,0 +1,377 @@
+{
+  "version": "v3",
+  "roc_auc": 0.7355361505122143,
+  "pr_auc": 0.37220876220002785,
+  "tpr": 0.3022222222222222,
+  "far": 0.007801418439716312,
+  "tp": 272,
+  "tn": 22384,
+  "fp": 176,
+  "fn": 628,
+  "lead_times": [
+    {
+      "flare_id": "SLX_20260602_001",
+      "class": "X",
+      "lead_time_min": 23.966666666666665,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260602_002",
+      "class": "B",
+      "lead_time_min": 6.683333333333334,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260602_003",
+      "class": "B",
+      "lead_time_min": 2.1333333333333333,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260602_004",
+      "class": "B",
+      "lead_time_min": 8.066666666666666,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260602_005",
+      "class": "M",
+      "lead_time_min": 5.733333333333333,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260602_006",
+      "class": "C",
+      "lead_time_min": 3.05,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260602_007",
+      "class": "M",
+      "lead_time_min": 10.25,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260602_008",
+      "class": "C",
+      "lead_time_min": 1.8166666666666667,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260602_009",
+      "class": "C",
+      "lead_time_min": 8.433333333333334,
+      "date": "2026-06-02"
+    },
+    {
+      "flare_id": "SLX_20260603_002",
+      "class": "B",
+      "lead_time_min": 10.1,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260603_003",
+      "class": "B",
+      "lead_time_min": 0,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260603_004",
+      "class": "X",
+      "lead_time_min": 6.45,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260603_005",
+      "class": "B",
+      "lead_time_min": 21.033333333333335,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260603_006",
+      "class": "C",
+      "lead_time_min": 2.283333333333333,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260603_007",
+      "class": "X",
+      "lead_time_min": 29.05,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260603_008",
+      "class": "B",
+      "lead_time_min": 2.8666666666666667,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260603_009",
+      "class": "C",
+      "lead_time_min": 0.5833333333333334,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260603_010",
+      "class": "B",
+      "lead_time_min": 12.2,
+      "date": "2026-06-03"
+    },
+    {
+      "flare_id": "SLX_20260605_001",
+      "class": "C",
+      "lead_time_min": 6.883333333333334,
+      "date": "2026-06-05"
+    },
+    {
+      "flare_id": "SLX_20260606_001",
+      "class": "C",
+      "lead_time_min": 8.733333333333333,
+      "date": "2026-06-06"
+    },
+    {
+      "flare_id": "SLX_20260606_002",
+      "class": "C",
+      "lead_time_min": 1.0333333333333334,
+      "date": "2026-06-06"
+    },
+    {
+      "flare_id": "SLX_20260606_003",
+      "class": "C",
+      "lead_time_min": 4.65,
+      "date": "2026-06-06"
+    },
+    {
+      "flare_id": "SLX_20260606_004",
+      "class": "B",
+      "lead_time_min": 10.833333333333334,
+      "date": "2026-06-06"
+    },
+    {
+      "flare_id": "SLX_20260607_001",
+      "class": "C",
+      "lead_time_min": 1.9,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260607_002",
+      "class": "C",
+      "lead_time_min": 5.783333333333333,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260607_003",
+      "class": "B",
+      "lead_time_min": 3.066666666666667,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260607_004",
+      "class": "B",
+      "lead_time_min": 0,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260607_005",
+      "class": "C",
+      "lead_time_min": 1.8333333333333333,
+      "date": "2026-06-07"
+    },
+    {
+      "flare_id": "SLX_20260608_001",
+      "class": "B",
+      "lead_time_min": 5.983333333333333,
+      "date": "2026-06-08"
+    },
+    {
+      "flare_id": "SLX_20260608_002",
+      "class": "B",
+      "lead_time_min": 28.9,
+      "date": "2026-06-08"
+    },
+    {
+      "flare_id": "SLX_20260608_003",
+      "class": "C",
+      "lead_time_min": 5.233333333333333,
+      "date": "2026-06-08"
+    },
+    {
+      "flare_id": "SLX_20260610_002",
+      "class": "C",
+      "lead_time_min": 28.383333333333333,
+      "date": "2026-06-10"
+    },
+    {
+      "flare_id": "SLX_20260610_003",
+      "class": "B",
+      "lead_time_min": 15.666666666666666,
+      "date": "2026-06-10"
+    },
+    {
+      "flare_id": "SLX_20260611_001",
+      "class": "C",
+      "lead_time_min": 2.8666666666666667,
+      "date": "2026-06-11"
+    },
+    {
+      "flare_id": "SLX_20260611_002",
+      "class": "M",
+      "lead_time_min": 24.15,
+      "date": "2026-06-11"
+    },
+    {
+      "flare_id": "SLX_20260611_003",
+      "class": "B",
+      "lead_time_min": 0,
+      "date": "2026-06-11"
+    },
+    {
+      "flare_id": "SLX_20260612_001",
+      "class": "M",
+      "lead_time_min": 1.4166666666666667,
+      "date": "2026-06-12"
+    },
+    {
+      "flare_id": "SLX_20260612_002",
+      "class": "C",
+      "lead_time_min": 1.6333333333333333,
+      "date": "2026-06-12"
+    },
+    {
+      "flare_id": "SLX_20260613_001",
+      "class": "B",
+      "lead_time_min": 10.816666666666666,
+      "date": "2026-06-13"
+    },
+    {
+      "flare_id": "SLX_20260614_001",
+      "class": "C",
+      "lead_time_min": 2.0833333333333335,
+      "date": "2026-06-14"
+    },
+    {
+      "flare_id": "SLX_20260615_001",
+      "class": "B",
+      "lead_time_min": 12.183333333333334,
+      "date": "2026-06-15"
+    },
+    {
+      "flare_id": "SLX_20260615_002",
+      "class": "C",
+      "lead_time_min": 1.4333333333333333,
+      "date": "2026-06-15"
+    },
+    {
+      "flare_id": "SLX_20260615_003",
+      "class": "C",
+      "lead_time_min": 4.183333333333334,
+      "date": "2026-06-15"
+    },
+    {
+      "flare_id": "SLX_20260615_004",
+      "class": "C",
+      "lead_time_min": 0.43333333333333335,
+      "date": "2026-06-15"
+    },
+    {
+      "flare_id": "SLX_20260615_005",
+      "class": "C",
+      "lead_time_min": 1.3166666666666667,
+      "date": "2026-06-15"
+    },
+    {
+      "flare_id": "SLX_20260616_001",
+      "class": "B",
+      "lead_time_min": 3.05,
+      "date": "2026-06-16"
+    },
+    {
+      "flare_id": "SLX_20260616_002",
+      "class": "C",
+      "lead_time_min": 0,
+      "date": "2026-06-16"
+    },
+    {
+      "flare_id": "SLX_20260616_003",
+      "class": "C",
+      "lead_time_min": 1.1,
+      "date": "2026-06-16"
+    },
+    {
+      "flare_id": "SLX_20260618_001",
+      "class": "B",
+      "lead_time_min": 2.2666666666666666,
+      "date": "2026-06-18"
+    },
+    {
+      "flare_id": "SLX_20260618_002",
+      "class": "B",
+      "lead_time_min": 10.183333333333334,
+      "date": "2026-06-18"
+    },
+    {
+      "flare_id": "SLX_20260618_003",
+      "class": "B",
+      "lead_time_min": 3.716666666666667,
+      "date": "2026-06-18"
+    },
+    {
+      "flare_id": "SLX_20260618_004",
+      "class": "C",
+      "lead_time_min": 3.7333333333333334,
+      "date": "2026-06-18"
+    },
+    {
+      "flare_id": "SLX_20260618_005",
+      "class": "B",
+      "lead_time_min": 7.45,
+      "date": "2026-06-18"
+    },
+    {
+      "flare_id": "SLX_20260619_001",
+      "class": "C",
+      "lead_time_min": 1.95,
+      "date": "2026-06-19"
+    },
+    {
+      "flare_id": "SLX_20260619_002",
+      "class": "C",
+      "lead_time_min": 10.766666666666667,
+      "date": "2026-06-19"
+    },
+    {
+      "flare_id": "SLX_20260620_001",
+      "class": "A",
+      "lead_time_min": 22.2,
+      "date": "2026-06-20"
+    },
+    {
+      "flare_id": "SLX_20260620_002",
+      "class": "B",
+      "lead_time_min": 6.433333333333334,
+      "date": "2026-06-20"
+    },
+    {
+      "flare_id": "SLX_20260620_003",
+      "class": "B",
+      "lead_time_min": 4.65,
+      "date": "2026-06-20"
+    },
+    {
+      "flare_id": "SLX_20260620_004",
+      "class": "X",
+      "lead_time_min": 4.483333333333333,
+      "date": "2026-06-20"
+    },
+    {
+      "flare_id": "SLX_20260620_005",
+      "class": "B",
+      "lead_time_min": 13.316666666666666,
+      "date": "2026-06-20"
+    }
+  ],
+  "n_detected": 56,
+  "n_total": 60,
+  "threshold": 0.7400000000000002,
+  "n_features": 76
+}
